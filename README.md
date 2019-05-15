@@ -1,6 +1,6 @@
 # vSphere UPI
 
-You should always follow the documentation [here]](https://github.com/openshift/installer/tree/master/upi/vsphere) and [here](https://github.com/openshift/installer/blob/master/docs/user/vsphere/install_upi.md) first, it's almost certainly more up-to-date.
+You should always follow the documentation [here](https://github.com/openshift/installer/tree/master/upi/vsphere) and [here](https://github.com/openshift/installer/blob/master/docs/user/vsphere/install_upi.md) first, it's almost certainly more up-to-date.
 
 ## Pre-reqs
 
@@ -141,7 +141,13 @@ If you used the sample Terraform to provision the VMs, etc. then use the command
 
 ## Troubleshooting
 
-You can connect to the VMs using the user `core` and key based auth, e.g. `ssh -i ~/ocp/id_rsa core@bootstrapFQDNorIP`.
+You can connect to the VMs using the user `core` and key based auth...
+
+```bash
+ssh -i ~/ocp/id_rsa core@bootstrapFQDNorIP
+```
+
+Once connected, follow the instructions in the MOTD for how to view logs.
 
 ## The RHCOS OVA
 
